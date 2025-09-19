@@ -15,8 +15,23 @@
     header {
       background-color: #0077cc;
       color: white;
-      padding: 1.5rem;
+      padding: 1rem;
       text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav {
+      margin-top: 0.5rem;
+    }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
     section {
       padding: 2rem;
@@ -47,14 +62,21 @@
   <header>
     <h1>Khangal</h1>
     <p>My Personal Webpage</p>
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#unit1">Unit 1</a>
+      <a href="#unit2">Unit 2</a>
+      <a href="#dns">DNS</a>
+      <a href="#video">Video</a>
+    </nav>
   </header>
 
-  <section>
+  <section id="about">
     <h2>About Me</h2>
     <p>After high school, I want to study <strong>Pre-Med</strong>. I am passionate about learning and exploring how science and technology connect with health and helping people.</p>
   </section>
 
-  <section>
+  <section id="unit1">
     <h2>Unit 1: Data</h2>
     <ul>
       <li><strong>bit:</strong> A binary digit, either 0 or 1.</li>
@@ -68,7 +90,7 @@
     <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Binary_and_hexadecimal_numbers.JPG" alt="Binary data example">
   </section>
 
-  <section>
+  <section id="unit2">
     <h2>Unit 2: Computer Systems and Networks</h2>
     <ul>
       <li><strong>Computing Device:</strong> A physical device that can run a program.</li>
@@ -88,9 +110,17 @@
     <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Internet_map_1024.jpg" alt="Computer network visualization">
   </section>
 
-  <section>
+  <section id="dns">
+    <h2>Domain Name System (DNS)</h2>
+    <p>The Domain Name System is like the phone book of the internet. Instead of typing in long numbers (IP addresses), we can type easy names like <em>google.com</em>, and DNS translates them into the numbers computers use to connect.</p>
+    <p><strong>Fun fact:</strong> The very first DNS system was created in 1983, and today there are over 1,000 DNS root servers around the world keeping the internet running smoothly.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Dns-architecture.svg" alt="DNS system diagram">
+  </section>
+
+  <section id="video">
     <h2>How the Internet Works</h2>
     <iframe src="https://www.youtube.com/embed/7_LPdttKXPc" title="How the Internet Works"></iframe>
   </section>
 </body>
 </html>
+
