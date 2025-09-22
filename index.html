@@ -5,26 +5,27 @@
   <title>Khangal - My Webpage</title>
   <style>
     body {
-      font-family: 'Trebuchet MS', Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      background: linear-gradient(to bottom, #e6f2ff, #ffffff);
-      color: #333;
+      background-color: #fafafa;
+      color: #222;
+      line-height: 1.6;
     }
     header {
-      background: #0099ff;
+      background: #0d6efd;
       color: white;
       padding: 2rem;
       text-align: center;
-      border-bottom: 5px solid #0077cc;
+      border-bottom: 4px solid #084298;
     }
     header h1 {
-      font-size: 3rem;
+      font-size: 2.5rem;
       margin: 0;
     }
     nav {
-      background-color: #0077cc;
-      padding: 1rem;
+      background-color: #084298;
+      padding: 0.8rem;
       text-align: center;
       position: sticky;
       top: 0;
@@ -33,44 +34,58 @@
     nav a {
       color: white;
       text-decoration: none;
-      margin: 0 20px;
-      font-weight: bold;
-      transition: color 0.3s;
+      margin: 0 15px;
+      font-weight: 600;
+      transition: border-bottom 0.3s;
+      padding-bottom: 2px;
     }
     nav a:hover {
-      color: #ffe066;
+      border-bottom: 2px solid #ffe066;
     }
     section {
       padding: 2rem;
       max-width: 900px;
       margin: 2rem auto;
-      background: #fdfdfd;
-      border-radius: 16px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      background: white;
+      border-radius: 10px;
+      border: 1px solid #ddd;
     }
     h2 {
-      color: #0099ff;
+      color: #0d6efd;
       margin-top: 0;
+      border-bottom: 2px solid #e5e5e5;
+      padding-bottom: 0.5rem;
     }
     ul {
-      list-style-type: "💡 ";
       margin-left: 20px;
+    }
+    ul li {
+      margin: 0.4rem 0;
     }
     img {
       max-width: 100%;
-      border-radius: 12px;
+      border-radius: 8px;
       margin: 1rem 0;
       display: block;
+      border: 1px solid #ccc;
+    }
+    figcaption {
+      font-size: 0.9rem;
+      color: #555;
+      text-align: center;
+      margin-top: -0.5rem;
+      margin-bottom: 1rem;
     }
     iframe {
       width: 100%;
       height: 400px;
       border: none;
-      border-radius: 12px;
+      border-radius: 8px;
+      margin-top: 1rem;
     }
     footer {
       text-align: center;
-      background-color: #0077cc;
+      background-color: #084298;
       color: white;
       padding: 1rem;
       margin-top: 2rem;
@@ -80,7 +95,7 @@
 </head>
 <body>
   <header>
-    <h1>🌟 Khangal 🌟</h1>
+    <h1>Khangal</h1>
     <p>Welcome to my personal webpage!</p>
   </header>
 
@@ -95,25 +110,28 @@
   <section id="about">
     <h2>About Me</h2>
     <p>
-      After high school, I want to study <strong>Pre-Med</strong>. I am passionate about 
-      science, technology, and how they connect with health. My dream is to become a doctor 
-      and help people live healthier, better lives. 🩺
+      After high school, I want to study <strong>Pre-Med</strong>. 
+      I’m passionate about science, technology, and health. 
+      My dream is to become a doctor and help people live healthier lives. 🩺
     </p>
   </section>
 
   <section id="unit1">
     <h2>Unit 1: Data</h2>
-    <p>This unit taught me how computers store and handle information. Here are some key terms:</p>
+    <p>This unit taught me how computers store and handle information. Some key terms:</p>
     <ul>
-      <li><strong>bit:</strong> A binary digit, either 0 or 1.</li>
+      <li><strong>bit:</strong> A binary digit (0 or 1).</li>
       <li><strong>byte:</strong> A sequence of 8 bits.</li>
       <li><strong>roundoff:</strong> Error from not enough bits to show a number fully.</li>
-      <li><strong>analog data:</strong> Values that change smoothly over time (like music 🎵).</li>
-      <li><strong>lossless:</strong> Compression that keeps all original data.</li>
+      <li><strong>analog data:</strong> Smoothly changing values (like sound waves).</li>
+      <li><strong>lossless:</strong> Compression that keeps all data.</li>
       <li><strong>lossy:</strong> Compression that removes some data permanently.</li>
       <li><strong>metadata:</strong> Data about data (like a file’s details).</li>
     </ul>
-    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1000&q=80" alt="Binary code illustration">
+    <figure>
+      <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1000&q=80" alt="Binary code illustration">
+      <figcaption>Binary data: the foundation of computing.</figcaption>
+    </figure>
   </section>
 
   <section id="unit2">
@@ -127,35 +145,40 @@
       <li><strong>Fault Tolerant:</strong> Keeps working even if parts fail.</li>
       <li><strong>Scalability:</strong> Can grow without breaking.</li>
       <li><strong>Bandwidth:</strong> Maximum data sent per second.</li>
-      <li><strong>URL:</strong> Human-friendly web address (like www.example.com).</li>
+      <li><strong>URL:</strong> Human-friendly web address.</li>
       <li><strong>Packets:</strong> Small chunks of transmitted data.</li>
-      <li><strong>Routers:</strong> Devices that direct packets through networks.</li>
+      <li><strong>Routers:</strong> Devices that direct packets.</li>
       <li><strong>DNS:</strong> Converts domain names to IP addresses.</li>
     </ul>
-    <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=1000&q=80" alt="Computer network visualization">
+    <figure>
+      <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=1000&q=80" alt="Computer network visualization">
+      <figcaption>A visualization of computer networks.</figcaption>
+    </figure>
   </section>
 
   <section id="dns">
     <h2>Domain Name System (DNS)</h2>
     <p>
       DNS is like the internet’s phonebook 📖. It takes easy names like <em>google.com</em> 
-      and finds the right number (IP address) so your computer knows where to connect. Without it, 
-      we’d have to memorize long strings of numbers!
+      and finds the right number (IP address) so your computer knows where to connect.
     </p>
     <p><strong>Fun fact:</strong> DNS started in 1983 and today has servers all around the globe 
-      to make sure you can reach websites quickly no matter where you are 🌍.
+      so you can reach websites quickly no matter where you are 🌍.
     </p>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/How_DNS_works.png" alt="DNS diagram">
+    <figure>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/How_DNS_works.png" alt="DNS diagram">
+      <figcaption>How DNS translates names into IP addresses.</figcaption>
+    </figure>
   </section>
 
   <section id="video">
     <h2>How the Internet Works</h2>
-    <p>Here’s a fun video that explains how the internet connects billions of devices!</p>
+    <p>Here’s a short video that explains how the internet connects billions of devices:</p>
     <iframe src="https://www.youtube.com/embed/7_LPdttKXPc" title="How the Internet Works"></iframe>
   </section>
 
   <footer>
-    <p>✨ Made by Khangal | Hosted on GitHub Pages ✨</p>
+    <p>Made by Khangal | Hosted on GitHub Pages</p>
   </footer>
 </body>
 </html>
